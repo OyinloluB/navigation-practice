@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-tab">
+            <li class="price active">Price</li>
+            <li class="name">Name</li>
+            <li class="relevance">Relevance</li>
+        </div>
+    </div>
+    
+<style>
+    body {
+        background-color: skyblue;
+    }
+    .container {
+        background-color: white;
+        position: absolute;
+        padding: 40px;
+        border-radius: 15px;
+        top: 47%;
+        left: 25%;
+        right: 25%;
+    }
+    .nav-tab {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        border: 3px solid steelblue;
+        border-radius: 5px;
+        min-width: 60%;
+    }
+    .nav-tab li {
+        list-style: none;
+        padding: 20px;
+        border-left: 4px solid steelblue;
+        cursor: pointer;
+        /* background-color: white; */
+        width: 25%;
+    }
+    .nav-tab li:first-child {
+        border-left: 1px solid steelblue;
+    }
+    .active {
+        background-color: steelblue;
+        box-shadow: 0 10px 10px 0 rgba(70, 130, 180, 0.6);
+    }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            width: 70%;
+            left: 10%;
+            right: 10%;
+        }
+        .nav-tab {
+            width: 85%;
+            border: none;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .container {
+            right: 0;
+            min-width: 60%;
+            padding: 20px;
+        }
+        .nav-tab {
+            width: 75%;
+        }
+        .nav-tab li {
+            width: 30%;
+            border-left: none;
+        }
+    }
+    
+</style>
+
+
+<script src="app.js"></script>
+</body>
+</html>
